@@ -107,7 +107,7 @@ RUN apt-get install -y nodejs
 #RUN cd superset/assets && yarn
 #RUN cd superset-frontend && npm ci && npm run build && rm -rf node_modules
 
-#HEALTHCHECK CMD ["curl", "-f", "http://localhost:8088/health"]
+HEALTHCHECK CMD ["curl", "-f", "http://localhost:8088/health"]
 ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 8088 5555
 #############################################  DOCKER FILE MASTER BI&A 2022/2023 BY KOUKOU     ################################
