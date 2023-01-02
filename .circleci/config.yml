@@ -1,7 +1,9 @@
+####### commande to test in CircleCI
+
 version: 2.1
 jobs:
   build:
-    working_directory: ~/docker-superset
+    working_directory: ~/docker-superset-mysql
     docker:
       - image: docker:17.05.0-ce-git
 
@@ -13,7 +15,7 @@ jobs:
 
       - run:
          name: list files
-         command: ls -lsrt ~/docker-superset
+         command: ls -lsrt ~/docker-superset-mysql
 
       - run:
          name: Build Docker image
@@ -35,3 +37,7 @@ workflows:
               only:
                 - master
                 - develop
+                
+                
+                
+        
