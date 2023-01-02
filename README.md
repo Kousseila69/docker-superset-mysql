@@ -1,7 +1,7 @@
 # docker-superset-mysql
 
 Repository for building [Docker](https://www.docker.com/) container of [Apache Superset](https://superset.apache.org).
-[<img src="https://cloud.githubusercontent.com/assets/130878/20946612/49a8a25c-bbc0-11e6-8314-10bef902af51.png" alt="Superset" width="500"/>](https://superset.apache.org)
+[<p align="center"> <img src="https://cloud.githubusercontent.com/assets/130878/20946612/49a8a25c-bbc0-11e6-8314-10bef902af51.png" alt="Superset" width="600"/> </p>](https://superset.apache.org)
 
 [![CircleCI](https://app.circleci.com/pipelines/github/Kousseila69/docker-superset-mysql)](https://circleci.com/gh/Kousseila/docker-superset-mysql/tree/master)
 [![License](http://img.shields.io/:license-Apache%202-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
