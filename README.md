@@ -15,7 +15,7 @@ Repository for building [Docker](https://www.docker.com/) container of [Apache S
 
 |Image|Pulls|Tags|
 |:---|:---:|:---:|
-|kousseila/superset-mysql|[![Docker Pulls](https://img.shields.io/docker/pulls/Kousseila/superset-mysql.svg)](https://cloud.docker.com/u/kousseila/repository/docker/kousseila/superset-mysql)|[tags](https://cloud.docker.com/repository/docker/kousseila/superset-msql/tags)|
+|kousseila/superset-mysql|[![Docker Pulls](https://img.shields.io/docker/pulls/Kousseila/superset-mysql.svg)](https://hub.docker.com/r/kousseila/superset-mysql)|[tags](https://hub.docker.com/r/kousseila/superset-msql/tags)|
 
 [<img src="Dockerhub.png" alt="Dockerhub">](Dockerhub.png)
 
