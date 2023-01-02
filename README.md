@@ -1,8 +1,9 @@
 # docker-superset-mysql
+
 Repository for building [Docker](https://www.docker.com/) container of [Apache Superset](https://superset.apache.org).
 [<img src="https://cloud.githubusercontent.com/assets/130878/20946612/49a8a25c-bbc0-11e6-8314-10bef902af51.png" alt="Superset" width="500"/>](https://superset.apache.org)
 
-[![CircleCI](https://circleci.com/gh/Kousseila69/docker-superset-mysql/tree/master.svg?style=svg)](https://circleci.com/gh/Kousseila/docker-superset-mysql/tree/master)
+[![CircleCI](https://circleci.com/gh/Kousseila69/docker-superset-mysql)](https://circleci.com/gh/Kousseila/docker-superset-mysql/tree/master)
 [![License](http://img.shields.io/:license-Apache%202-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
 [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/Kousseila69/docker-superset-mysql)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -14,7 +15,7 @@ Repository for building [Docker](https://www.docker.com/) container of [Apache S
 
 |Image|Pulls|Tags|
 |:---|:---:|:---:|
-|kousseila/superset-mysql|[![Docker Pulls](https://img.shields.io/docker/pulls/Kousseila69/docker-superset-mysql.svg)](https://cloud.docker.com/u/kousseila/repository/docker/kousseila/superset-mysql)|[tags](https://cloud.docker.com/repository/docker/kousseila/superset-mysql/tags)|
+|kousseila/superset-mysql|[![Docker Pulls](https://img.shields.io/docker/pulls/Kousseiladocker-superset-mysql.svg)](https://cloud.docker.com/u/kousseila/repository/docker/kousseila/superset-mysql)|[tags](https://cloud.docker.com/repository/docker/kousseila/superset-mysql/tags)|
 
 ## Superset components stack
 - Enhanced/Modified version of the docker container of [apache-superset](https://github.com/apache/incubator-superset/tree/master/contrib/docker).
@@ -55,7 +56,7 @@ Repository for building [Docker](https://www.docker.com/) container of [Apache S
    * [DockerFile](docker-files/Dockerfile) uses `superset-version` as a `build-arg`, for example: `0.28.0` or `0.29.0rc4`
    * build image using `docker build` command
         ```shell
-        docker build -t koussila/docker-superset:<version-tag> --build-arg SUPERSET_VERSION=<superset-version> -f ~/docker-superset/docker-files/Dockerfile .
+        docker build -t koussila/docker-superset-mysql:<version-tag> --build-arg SUPERSET_VERSION=<superset-version> -f ~/docker-superset-mysql/docker-files/Dockerfile .
         ```
 ## How to run using Kitmatic
 * Simplest way for exploration purpose, using [Kitematic](https://kitematic.com)(Run containers through a simple, yet powerful graphical user interface.) 
@@ -108,11 +109,11 @@ Repository for building [Docker](https://www.docker.com/) container of [Apache S
     * using `docker run`:    
         * starting a superset image as a `server` container:
             ```shell
-            cd docker-superset && docker run -p 8088:8088 -v config:/home/superset/config/ abhioncbr/docker-superset:<version-tag> cluster server <superset_metadata_db_url> <redis_url>
+            cd docker-superset && docker run -p 8088:8088 -v config:/home/superset/config/ kousseila/docker-superset-mysql:<version-tag> cluster server <superset_metadata_db_url> <redis_url>
             ```        
         * starting a superset image as a `worker` container:
             ```shell
-             cd docker-superset && docker run -p 5555:5555 -v config:/home/superset/config/ abhioncbr/docker-superset:<version-tag> cluster worker <superset_metadata_db_url> <redis_url>
+             cd docker-superset && docker run -p 5555:5555 -v config:/home/superset/config/ kousseila/docker-superset-mysql:<version-tag> cluster worker <superset_metadata_db_url> <redis_url>
             ```    
        
     [<img src="docker-superset_execution.png" alt="Superset">](docker-superset_execution.png)   
