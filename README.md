@@ -13,7 +13,7 @@ Repository for building [Docker](https://www.docker.com/) container of [Apache S
 
 Superset is a modern data exploration and data visualization platform. Superset can replace or augment proprietary business intelligence tools for many teams. Superset integrates well with a variety of data sources.
 
-#Superset provides:
+# Superset provides:
 
 A no-code interface for building charts quickly
 A powerful, web-based SQL Editor for advanced querying
@@ -25,14 +25,14 @@ Highly extensible security roles and authentication options
 An API for programmatic customization
 A cloud-native architecture designed from the ground up for scale
 
-#Screenshots & Gifs
+# Screenshots & Gifs
 Large Gallery of Visualizations
 
-  * [<img src="gallery.png" alt="gallery">](gallery.png.png) 
+   * [<img src="gallery.png" alt="gallery">](gallery.png) 
 
-#Craft Beautiful, Dynamic Dashboards
+# Craft Beautiful, Dynamic Dashboards
 
-  *  [<img src="slack_dash.png" alt="slack_dash">](slack_dash.png.png)
+   * [<img src="slack_dash.png" alt="slack_dash">](slack_dash.png)
 
 # Git FLOW 
 I used the git flow for this project. The structure of our repository is the following : 
