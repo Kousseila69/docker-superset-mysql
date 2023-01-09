@@ -15,15 +15,15 @@ Superset is a modern data exploration and data visualization platform. Superset 
 
 # Superset provides:
 
-A no-code interface for building charts quickly
-A powerful, web-based SQL Editor for advanced querying
-A lightweight semantic layer for quickly defining custom dimensions and metrics
-Out of the box support for nearly any SQL database or data engine
-A wide array of beautiful visualizations to showcase your data, ranging from simple bar charts to geospatial visualizations
-Lightweight, configurable caching layer to help ease database load
-Highly extensible security roles and authentication options
-An API for programmatic customization
-A cloud-native architecture designed from the ground up for scale
+* A no-code interface for building charts quickly
+* A powerful, web-based SQL Editor for advanced querying
+* A lightweight semantic layer for quickly defining custom dimensions and metrics
+* Out of the box support for nearly any SQL database or data engine
+* A wide array of beautiful visualizations to showcase your data, ranging from simple bar charts to geospatial visualizations
+* Lightweight, configurable caching layer to help ease database load
+* Highly extensible security roles and authentication options
+* An API for programmatic customization
+* A cloud-native architecture designed from the ground up for scale
 
 # Screenshots & Gifs
 Large Gallery of Visualizations
@@ -36,7 +36,7 @@ Large Gallery of Visualizations
 
 # Git FLOW 
 I used the git flow for this project. The structure of our repository is the following : 
-3 branchs and the remote 'master'
+3 branchs and the remote 'master' an 'main'
 
 ![image](https://user-images.githubusercontent.com/48882137/155838038-6d7aebed-8ed0-4f23-a62d-8b4e86679983.png)
 
