@@ -28,11 +28,11 @@ A cloud-native architecture designed from the ground up for scale
 # Screenshots & Gifs
 Large Gallery of Visualizations
 
-   * [<img src="gallery.png" alt="gallery">](gallery.png) 
+   [<img src="gallery.jpg" alt="gallery">](gallery.jpg) 
 
 # Craft Beautiful, Dynamic Dashboards
 
-   * [<img src="slack_dash.png" alt="slack_dash">](slack_dash.png)
+   [<img src="slack_dash.jpg" alt="slack_dash">](slack_dash.jpg)
 
 # Git FLOW 
 I used the git flow for this project. The structure of our repository is the following : 
