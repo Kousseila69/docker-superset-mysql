@@ -7,6 +7,8 @@
 #########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
 FROM apache/superset
+LABEL  version=2.0.1rc6  mainteneur=kousseila
+ENV CONTAINER_USER=kousseila
 # Switching to root to install the required packages
 USER root
 # Example: installing the MySQL driver to connect to the metadata database
@@ -22,13 +24,15 @@ USER superset
 FROM python:3.6
 # Build argument[version of apache-superset to be build: pass value while building image]
 # Argument de construction [version d’apache-superset à construire : passage de valeur lors de la construction d’image] 
-ARG SUPERSET_VERSION
+#ARG SUPERSET_VERSION
+
+MAINTAINER Kousseila OUAGUENI <ouaguenikousseila@gmail.com>
+
 
 #ARG SUPERSET_VERSION
 
 ENV SUPERSET_HOME=/home/superset/
 
-MAINTAINER Kousseila OUAGUENI <ouaguenikousseila@gmail.com>
 
 RUN groupadd -g 5006 superset
 RUN useradd --create-home --no-log-init --uid 5004 --gid 5006 --home ${SUPERSET_HOME} --shell /bin/bash superset
@@ -43,7 +47,7 @@ RUN apt-get update -y
 RUN apt-get install -y apt-transport-https apt-utils
 
 # Install common useful packages
-RUN apt-get install -y vim less curl netcat postgresql-client default-mysql-client redis-tools
+#RUN apt-get install -y vim less curl netcat postgresql-client default-mysql-client redis-tools
 
 #docker build was failing because of cryptography package failure wirl libssl-dev.
 #instead of libssl-dev it is not set to `libssl1.0-dev`
@@ -108,6 +112,6 @@ RUN apt-get install -y nodejs
 #RUN cd superset-frontend && npm ci && npm run build && rm -rf node_modules
 
 HEALTHCHECK CMD ["curl", "-f", "http://localhost:8088/health"]
-ENTRYPOINT ["docker-entrypoint.sh"]
+#ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 8088 5555
 #############################################  DOCKER FILE MASTER BI&A 2022/2023 BY KOUKOU     ################################
