@@ -34,8 +34,8 @@ MAINTAINER Kousseila OUAGUENI <ouaguenikousseila@gmail.com>
 ENV SUPERSET_HOME=/home/superset/
 
 
-RUN groupadd -g 5006 superset
-RUN useradd --create-home --no-log-init --uid 5004 --gid 5006 --home ${SUPERSET_HOME} --shell /bin/bash superset
+#RUN groupadd -g 5006 superset
+#RUN useradd --create-home --no-log-init --uid 5004 --gid 5006 --home ${SUPERSET_HOME} --shell /bin/bash superset
 # Configure environment
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8
@@ -112,6 +112,6 @@ RUN apt-get install -y nodejs
 #RUN cd superset-frontend && npm ci && npm run build && rm -rf node_modules
 
 HEALTHCHECK CMD ["curl", "-f", "http://localhost:8088/health"]
-#ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 8088 5555
 #############################################  DOCKER FILE MASTER BI&A 2022/2023 BY KOUKOU     ################################
