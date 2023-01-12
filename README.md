@@ -1,7 +1,3 @@
-#docker-superset-mysql
-Apache-superset  using Mysql DB
- 
-
 # contributors
 Kousseila OUAGUENI <https://www.linkedin.com/in/kousseila-ouagueni/>
 
@@ -33,10 +29,21 @@ Large Gallery of Visualizations
 # Craft Beautiful, Dynamic Dashboards
 
    [<img src="slack_dash.jpg" alt="slack_dash">](slack_dash.jpg)
+# Project of docker-superset-mysql with redis db
+
+Apache-superset  using Mysql DB and data from redis
+* The objectif of my project to use the solution of busness intelligence from Apache-seperset (data visualization platform) using Redis and Mysql(add mysql workbench).
+Redis : is a fast open*source in memory data structure store, offring a set of versatile in memory data structures that allow as to easily build a wid range of custom applications.
+
+* the data transfer structure :
+
+  [<img src="th.jpg" alt="th">](th.jpg)  
+
 
 # Git FLOW 
+
 I used the git flow for this project. The structure of our repository is the following : 
-3 branchs and the remote 'master' an 'main'
+2 branchs and the remote 'master' as dev version and  an 'main'
 
 ![image](https://user-images.githubusercontent.com/48882137/155838038-6d7aebed-8ed0-4f23-a62d-8b4e86679983.png)
 
@@ -68,7 +75,10 @@ I used the git flow for this project. The structure of our repository is the fol
         * starting a superset image as a `superset` container in a **local** mode:
             ```shell
             cd docker-superset-mysql/docker-files/ && docker-compose up -d
-            OR  deocker-compose -f docker-compose.yml up -d                   ```
+            
+            * Go to the floder where the file docker-compose.yml
+            
+              docker-compose -f docker-compose.yml up -d                   ```
 
           or for passing some different environment variables values like below
             ```shell
@@ -87,7 +97,7 @@ I used the git flow for this project. The structure of our repository is the fol
             ```        
         * starting a superset image as a `worker` container:
             ```shell
-             cd docker-superset && docker run -p 5555:5555 -v config:/home/superset/config/ kousseila/superset-mysql:<version-tag> cluster worker <superset_metadata_db_url> <redis_url>
+             cd docker-superset-mysql && docker run -p 5555:5555 -v config:/home/superset/config/ kousseila/superset-mysql:<version-tag> cluster worker <superset_metadata_db_url> <redis_url>
             ```    
        
     [<img src="docker-superset_execution.png" alt="Superset">](docker-superset_execution.png)   

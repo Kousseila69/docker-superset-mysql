@@ -18,11 +18,13 @@ docker-compose -f docker-compose.yml up -d
 
 # open the web page for superset
 
-#xdg-open "http://localhost:8088"
+xdg-open "http://localhost:8088"
 
-# open the web page for server 
+#open the web page for server 
 
-#xdg-open "http://localhost:5555"
+xdg-open "http://localhost:5555"
+
+#open the web page for mysql-workbench
 
 #xdg-open "http://localhost:3000"
 
