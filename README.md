@@ -102,7 +102,7 @@ I used the git flow for this project. The structure of our repository is the fol
         * to show images juste execute this commande "docker images"
          
          
-      [<img src="dockerimages.jpg" alt="dockerimages">](dockerimages.jpg")  
+      [<img src="dockerimages.JPG" alt="dockerimages">](dockerimages.JPG")  
         
         * to show containers  runing execute this commande "docker ps or docker ps -a"
         
