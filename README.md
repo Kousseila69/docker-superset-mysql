@@ -73,9 +73,9 @@ I used the git flow for this project. The structure of our repository is the fol
 
 
     * to `build`an image with any version using Dockerfile :
-          ```shell
-          docker build . -t kousseila/superset-mysql : {version}
-          ```
+        ```shell
+        docker build . -t kousseila/superset-mysql:tag
+        ```
     * exemple:
          ```shell
          docker build . -t kousseila/superset-mysql:2.0.1rc6
