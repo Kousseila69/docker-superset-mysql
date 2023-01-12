@@ -37,7 +37,7 @@ Redis : is a fast open*source in memory data structure store, offring a set of v
 
 * the data transfer structure :
 
-
+   * [<img src="structure.jpg" alt="structure>](structure.jpg)
    [<img src="structure.jpg" alt="structure" width="800">](structure.jpg)  
 
 
