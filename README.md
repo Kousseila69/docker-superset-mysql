@@ -79,16 +79,16 @@ I used the git flow for this project. The structure of our repository is the fol
     * exemple:
       ```shell
      docker build . -t kousseila/superset-mysql:2.0.1rc6
-      
+      ```  
     * using `docker-compose`:
         * starting a superset image as a `superset` container in a **local** mode:
             ```shell
             cd docker-superset-mysql/docker-files/ && docker-compose up -d
-            
+             ```
             * Go to the floder where the file docker-compose.yml
-            
+            ```shell
               docker-compose -f docker-compose.yml up -d                   ```
-
+            ```
           or for passing some different environment variables values like below
             ```shell
             cd docker-superset-mysql /docker-files/ && SUPERSET_ENV=local SUPERSET_VERSION=<version-tag> docker-compose up -d
@@ -97,7 +97,7 @@ I used the git flow for this project. The structure of our repository is the fol
         * starting a superset image as a `superset` container in a **prod** mode:
             ```shell
             cd docker-superset-mysql/docker-files/ && SUPERSET_ENV=prod SUPERSET_VERSION=<version-tag> docker-compose up -d
-          
+          ```  
         
         * to show images juste execute this commande "docker images"
          
