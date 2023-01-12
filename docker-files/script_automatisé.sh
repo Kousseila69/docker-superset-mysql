@@ -10,7 +10,7 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images)
 
 #BUILD the docker image
-#docker build . -t kousseila/superset-mysql:2.0.1rc6
+docker build . -t kousseila/superset-mysql:2.0.1rc6
 
 #start containers with docker compose
 
@@ -26,7 +26,7 @@ xdg-open "http://localhost:5555"
 
 #open the web page for mysql-workbench
 
-#xdg-open "http://localhost:3000"
+xdg-open "http://localhost:3000"
 
 
 

@@ -67,9 +67,19 @@ I used the git flow for this project. The structure of our repository is the fol
              |    |_docker-compose.yml
              |    |_.env
              |    |_Dockerfile
+             |    |_script_automatisé.sh
         
         ```   
 
+
+    * to build an image with any version using Dockerfile :
+     
+     docker build . -t kousseila/superset-mysql : {version}
+
+    * exemple:
+      ```shell
+     docker build . -t kousseila/superset-mysql:2.0.1rc6
+      
     * using `docker-compose`:
         * starting a superset image as a `superset` container in a **local** mode:
             ```shell
@@ -87,7 +97,16 @@ I used the git flow for this project. The structure of our repository is the fol
         * starting a superset image as a `superset` container in a **prod** mode:
             ```shell
             cd docker-superset-mysql/docker-files/ && SUPERSET_ENV=prod SUPERSET_VERSION=<version-tag> docker-compose up -d
-            ```
+          
+        
+        * to show images juste execute this commande "docker images"
+         
+         
+      [<img src="dockerimages.jpg" alt="dockerimages">](dockerimages.jpg")  
+        
+        * to show containers  runing execute this commande "docker ps or docker ps -a"
+        
+       [<img src="dockerps.PNG" alt="dockerps">](dockerps.PNG")  
             
     * using `docker run`:    
         * starting a superset image as a `server` container:
