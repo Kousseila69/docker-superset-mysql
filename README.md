@@ -36,9 +36,9 @@ Apache-superset  using Mysql DB and data from redis
 Redis : is a fast open*source in memory data structure store, offring a set of versatile in memory data structures that allow as to easily build a wid range of custom applications.
 
 * the data transfer structure :
-
-   [<img src="redis.png" alt="redis">](redis.png)  
-
+      
+    [<img src="redis.png" alt="redis">](redis.png)  
+    
 # Git FLOW 
 
 I used the git flow for this project. The structure of our repository is the following : 
