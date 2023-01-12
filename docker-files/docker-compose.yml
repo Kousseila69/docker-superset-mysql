@@ -49,11 +49,46 @@ services:
       - ../config/:/home/superset/config/
 #    networks:
  #     - apache-superset-network
+  mysqlworkbench:
+    image: lscr.io/linuxserver/mysql-workbench:latest
+    container_name: mysql-workbench
+  #  environment:
+    #  - PUID=1000
+    #  - PGID=1000
+   #   - TZ=Europe/London
+   # volumes:
+   #   - /path/to/config:/config
+    ports:
+      - 3000:3000
+   # cap_add:
+     # - IPC_LOCK
+    restart: unless-stopped
+ #   depends_on:
+   #   - mysql
 volumes:
   mysql:
     external: false
   redis:
     external: false
+  #mysqlworkbench: 
+  #  external: false
+    
+  
+ #   - PUID=1000
+ #   - PGID=1000
+   # - TZ= Europe/London
+   # Volumes:
+   # mysqldata
+   # ports:
+   # - 3000:3000
+#    cap_add:
+   # - IPC_LOCK
+  # restart : unless-stopped
+   
+    
+    
+
+    
 #networks:
   #   apache-superset-network:
  #     driver: bridge

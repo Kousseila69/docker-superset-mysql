@@ -10,10 +10,22 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images)
 
 #BUILD the docker image
-docker build . -t kousseila/superset-mysql:2.0.1rc6
+#docker build . -t kousseila/superset-mysql:2.0.1rc6
 
 #start containers with docker compose
 
 docker-compose -f docker-compose.yml up -d
+
+# open the web page for superset
+
+#xdg-open "http://localhost:8088"
+
+# open the web page for server 
+
+#xdg-open "http://localhost:5555"
+
+#xdg-open "http://localhost:3000"
+
+
 
 
